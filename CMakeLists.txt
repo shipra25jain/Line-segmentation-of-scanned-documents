@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( staticrlsa )
+find_package( OpenCV REQUIRED )
+add_executable( staticrlsa staticrlsa.cpp )
+target_link_libraries( staticrlsa  ${OpenCV_LIBS} )
